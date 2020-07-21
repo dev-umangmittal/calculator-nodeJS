@@ -6,12 +6,12 @@ pipeline {
             steps {
                     bat script: 'npm install'
             }
-        },
+        }
         stage('Test') {
             steps {
                     bat script: 'npm test'
             }
-        },
+        }
         stage('Deploy') {
             steps {
                     bat script: 'npm start'
